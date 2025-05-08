@@ -4,3 +4,4 @@ type = "javascript"
 [env.production]
 kv_namespaces = [
   { binding = "LINKS", id = "3118463785824597925f8e2c509040e6" }
+]
