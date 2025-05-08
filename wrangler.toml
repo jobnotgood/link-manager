@@ -1,7 +1,10 @@
-name = "link-manager"
+name = "my-worker"
 type = "javascript"
+account_id = "a04f65b5b7d6b6757a8b7585ebc8728f"
+workers_dev = true
+compatibility_date = "2024-05-08"
 
-[env.production]
-kv_namespaces = [
-  { binding = "LINKS", id = "3118463785824597925f8e2c509040e6" }
-]
+[[kv_namespaces]]
+binding = "LINKS"
+id = "3118463785824597925f8e2c509040e6"
+preview_id = "3118463785824597925f8e2c509040e6"
