@@ -1,0 +1,12 @@
+name = "link-manager"
+type = "javascript"
+
+account_id = "a04f65b5b7d6b6757a8b7585ebc8728f"
+workers_dev = true
+
+[env.production]
+name = "link-manager-prod"
+
+[[env.production.kv_namespaces]]
+binding = "LINKS"
+id = "3118463785824597925f8e2c509040e6"
