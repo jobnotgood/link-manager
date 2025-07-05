@@ -1,0 +1,14 @@
+name: Keep Cloudflare Worker Warm
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # 每5分钟执行一次
+
+jobs:
+  keep-warm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl Worker
+        run: |
+          curl -s https://222odd-dew-f417.youihim1234.workers.dev/
+          curl -s https://link-rotator.youihim1234.workers.dev/
